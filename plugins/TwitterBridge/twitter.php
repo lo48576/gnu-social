@@ -111,7 +111,7 @@ function is_twitter_bound($notice, $flink) {
         return false;
     }
 
-    $allowedVerbs = array(ActivityVerb::POST, ActivityVerb::SHARE);
+    $allowedVerbs = array(ActivityVerb::POST);
 
     // Don't send things that aren't posts or repeats (at least for now)
     if (!in_array($notice->verb, $allowedVerbs)) {
